@@ -1,5 +1,6 @@
 .DS_Store
 .git
+.deploy_git
 node_modules/
 dist/
 npm-debug.log
