@@ -69,6 +69,6 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
-  type: github
+  type: git
   repository: https://github.com/eyeA/eyea.github.io.git
   branch: master
