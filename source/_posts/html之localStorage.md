@@ -1,9 +1,8 @@
 ---
-title: html5的localStorage本地存储
+title: HTML5---localStorage本地存储
 date: 2017-01-05 00:33:03
 tags:
-categories: "阅读"
-type: reading
+categories: 性能优化
 ---
 ### 概述
 HTML5 提供了两种在客户端存储数据的新方法：

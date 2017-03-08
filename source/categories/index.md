@@ -1,5 +1,5 @@
 ---
-title: 分类
+title: 
 date: 2017-01-04 23:54:16
+type: 'categories'
 ---
-分类内容

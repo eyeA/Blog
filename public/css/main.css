@@ -180,14 +180,14 @@ th {
   padding: 0;
 }
 ::selection {
-  background: #262a30;
-  color: #fff;
+  background: #87daff;
+  color: #555;
 }
 body {
   position: relative;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.8;
   color: #555;
   background: #fff;
 }
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 h2,
 h3,
@@ -274,7 +274,7 @@ h6 {
   }
 }
 p {
-  margin: 0 0 25px 0;
+  margin: 0 0 16px 0;
 }
 a {
   color: #555;
@@ -494,7 +494,7 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 16px;
   color: #c5c8c6;
   background: #1d1f21;
   line-height: 1.6;
@@ -508,8 +508,8 @@ code {
   word-wrap: break-word;
   color: #c5c8c6;
   background: #1d1f21;
-  border-radius: 3px;
-  font-size: 13px;
+  border-radius: 2px;
+  font-size: 16px;
 }
 pre code {
   padding: 0;
@@ -1017,7 +1017,7 @@ pre .javascript .function {
   line-height: 36px;
   font-size: 20px;
   font-weight: normal;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1105,7 +1105,7 @@ pre .javascript .function {
   opacity: 0;
 }
 .post-body {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 @media (max-width: 767px) {
   .post-body {
@@ -1370,7 +1370,7 @@ pre .javascript .function {
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
   color: #999;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
 }
@@ -1593,10 +1593,10 @@ pre .javascript .function {
 .site-author-image {
   display: block;
   margin: 0 auto;
-  padding: 2px;
+  padding: 1px;
   max-width: 96px;
   height: auto;
-  border: 2px solid #333;
+  border: 1px solid #333;
 }
 .site-author-name {
   margin: 5px 0 0;
@@ -1678,7 +1678,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #454030;
+  background: #e9fc01;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2434,7 +2434,9 @@ h6 {
   margin: 20px 0 10px;
 }
 p {
-  margin: 0 0 25px 0;
+  font-fmaily: "PingFang SC", "Microsoft YaHei";
+  font-size: 16px;
+  line-heght: 1.6;
 }
 a {
   border-bottom-color: #ccc;
@@ -2444,13 +2446,13 @@ hr {
   height: 2px;
 }
 .main-inner {
-  margin-top: 80px;
+  margin-top: 56px;
 }
 .header {
   background: #f5f5f5;
 }
 .header-inner {
-  padding: 25px 0 20px;
+  padding: 14px 0 14px;
 }
 .header-inner:before,
 .header-inner:after {
@@ -2543,7 +2545,7 @@ hr {
 }
 @media (max-width: 767px) {
   .menu {
-    margin: 20px 0 0 0;
+    margin: 20px 0 10px 0;
     padding: 0;
   }
 }
@@ -2606,14 +2608,16 @@ hr {
   display: none;
 }
 .posts-expand .post {
-  margin-top: 120px;
+  margin-top: 66px;
+  border-bottom: 2px dashed #008000;
+  padding-bottom: 66px;
 }
 .posts-expand .post:first-child {
   margin-top: 0;
 }
 .posts-expand .post-meta {
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .posts-expand .post-title {
   position: relative;
