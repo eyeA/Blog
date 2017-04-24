@@ -189,7 +189,8 @@ body {
   font-size: 14px;
   line-height: 1.8;
   color: #555;
-  background: #fff;
+  background: #f5f5d5;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   body {
@@ -494,9 +495,8 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 16px;
-  color: #c5c8c6;
-  background: #1d1f21;
+  color: #b294bb;
+  background: #e0dfcc;
   line-height: 1.6;
 }
 pre,
@@ -504,10 +504,9 @@ code {
   font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
 }
 code {
-  padding: 2px 4px;
+  padding: 5px;
   word-wrap: break-word;
-  color: #c5c8c6;
-  background: #1d1f21;
+  background-color: #8abeb7;
   border-radius: 2px;
   font-size: 16px;
 }
@@ -518,7 +517,7 @@ pre code {
   text-shadow: none;
 }
 .highlight {
-  border-radius: 1px;
+  border-radius: 4px;
 }
 .highlight pre {
   border: none;
@@ -560,12 +559,12 @@ pre code {
   padding-right: 10px;
   color: #888f96;
   text-align: right;
-  background-color: #000;
+  background-color: #e0dfcc;
 }
 .highlight .code pre {
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #1d1f21;
+  background-color: #e0dfcc;
 }
 .highlight .line {
   height: 20px;
@@ -976,7 +975,7 @@ pre .javascript .function {
   bottom: 19px;
 }
 .header {
-  background: #fff;
+  background: #f5f5d5;
 }
 .header-inner {
   position: relative;
@@ -1528,8 +1527,7 @@ pre .javascript .function {
   bottom: 0;
   width: 0;
   z-index: 1040;
-  box-shadow: inset 0 2px 6px #000;
-  background: #222;
+  background: #555;
   -webkit-transform: translateZ(0);
 }
 .sidebar a {
@@ -1678,7 +1676,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0dff05;
+  background: #3b8332;
 }
 .links-of-blogroll {
   font-size: 13px;

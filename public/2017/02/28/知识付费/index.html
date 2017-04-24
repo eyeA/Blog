@@ -16,6 +16,8 @@
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
+<meta name="baidu-site-verification" content="YjFp4zmucK" />
+
 
 
 
@@ -78,6 +80,7 @@
 
 
 <meta name="description" content="最近经常在耳朵边环绕的词语就是：知识付费，内容创业。">
+<meta name="keywords" content="知识付费、变现,知识共享">
 <meta property="og:type" content="article">
 <meta property="og:title" content="知识付费随笔（一）">
 <meta property="og:url" content="http://eyea.github.io/2017/02/28/知识付费/index.html">
@@ -99,7 +102,7 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
+      userId: 'undefined',
       author: '博主'
     },
     algolia: {
@@ -292,7 +295,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-28T15:20:05+08:00">
+              <time title="Дата создания записи" itemprop="dateCreated datePublished" datetime="2017-02-28T15:20:05+08:00">
                 2017-02-28
               </time>
             
@@ -346,7 +349,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/02/28/知识付费/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/28/知识付费/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/02/28/知识付费/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -427,8 +430,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/20/哆啦A梦/" rel="next" title="哆啦A梦">
-                <i class="fa fa-chevron-left"></i> 哆啦A梦
+              <a href="/2017/03/21/VR之A-FRAME接触1/" rel="next" title="VR之A-FRAME接触1">
+                <i class="fa fa-chevron-left"></i> VR之A-FRAME接触1
               </a>
             
           </div>
@@ -437,8 +440,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/08/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/2017/01/20/哆啦A梦/" rel="prev" title="哆啦A梦">
+                哆啦A梦 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -465,8 +468,11 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/02/28/知识付费/"
-           data-title="知识付费随笔（一）" data-url="http://eyea.github.io/2017/02/28/知识付费/">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
       </div>
     
   </div>
@@ -504,7 +510,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -513,7 +519,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -522,7 +528,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -674,32 +680,38 @@
 
   
 
-  
-    
-  
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"blogeyea"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
 
   
-    
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
+
+    <script type="text/javascript">
+      var disqus_shortname = 'http-blog-eyeseau-com';
+      var disqus_identifier = '2017/02/28/知识付费/';
+
+      var disqus_title = "知识付费随笔（一）";
+
+
+      function run_disqus_script(disqus_script) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
+      
+
+    </script>
   
-
-
-
 
 
 

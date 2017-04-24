@@ -16,6 +16,8 @@
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
+<meta name="baidu-site-verification" content="YjFp4zmucK" />
+
 
 
 
@@ -78,6 +80,7 @@
 
 
 <meta name="description" content="概述HTML5 提供了两种在客户端存储数据的新方法：localStorage - 没有时间限制的数据存储sessionStorage - 针对一个 session 的数据存储">
+<meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTML5---localStorage本地存储">
 <meta property="og:url" content="http://eyea.github.io/2017/01/05/html之localStorage/index.html">
@@ -99,7 +102,7 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
+      userId: 'undefined',
       author: '博主'
     },
     algolia: {
@@ -292,7 +295,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-05T00:33:03+08:00">
+              <time title="Дата создания записи" itemprop="dateCreated datePublished" datetime="2017-01-05T00:33:03+08:00">
                 2017-01-05
               </time>
             
@@ -346,7 +349,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/01/05/html之localStorage/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/05/html之localStorage/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/01/05/html之localStorage/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -416,8 +419,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/05/night/" rel="next" title="开始新篇章">
-                <i class="fa fa-chevron-left"></i> 开始新篇章
+              <a href="/2017/01/09/前端ajax跨域请求方案/" rel="next" title="Ajax跨域请求方案">
+                <i class="fa fa-chevron-left"></i> Ajax跨域请求方案
               </a>
             
           </div>
@@ -426,8 +429,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/09/前端ajax跨域请求方案/" rel="prev" title="Ajax跨域请求方案">
-                Ajax跨域请求方案 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/01/05/night/" rel="prev" title="开始新篇章">
+                开始新篇章 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -454,8 +457,11 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/01/05/html之localStorage/"
-           data-title="HTML5---localStorage本地存储" data-url="http://eyea.github.io/2017/01/05/html之localStorage/">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
       </div>
     
   </div>
@@ -502,7 +508,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -511,7 +517,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -520,7 +526,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -688,32 +694,38 @@
 
   
 
-  
-    
-  
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"blogeyea"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
 
   
-    
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
+
+    <script type="text/javascript">
+      var disqus_shortname = 'http-blog-eyeseau-com';
+      var disqus_identifier = '2017/01/05/html之localStorage/';
+
+      var disqus_title = "HTML5---localStorage本地存储";
+
+
+      function run_disqus_script(disqus_script) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
+      
+
+    </script>
   
-
-
-
 
 
 
