@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://eyea.github.io/2017/05/09/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%9C%A8AWS%E4%B8%8AVPS%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/</loc>
+    
+    <lastmod>2017-05-09T14:43:40.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://eyea.github.io/2017/04/24/%E8%B5%84%E6%BA%90%E5%92%8C%E6%96%87%E7%AB%A0/</loc>
     
     <lastmod>2017-04-24T07:17:43.000Z</lastmod>
@@ -100,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://eyea.github.io/categories/index.html</loc>
+    <loc>http://eyea.github.io/about/index.html</loc>
     
     <lastmod>2017-03-08T01:18:02.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://eyea.github.io/about/index.html</loc>
+    <loc>http://eyea.github.io/categories/index.html</loc>
     
     <lastmod>2017-03-08T01:18:02.000Z</lastmod>
     
