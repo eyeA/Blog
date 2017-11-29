@@ -2,8 +2,8 @@
 .git
 .deploy_git
 node_modules/
-dist/
-public/
+dist/*
+public/*
 npm-debug.log
 selenium-debug.log
 test/unit/coverage
