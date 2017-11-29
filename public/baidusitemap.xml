@@ -4,22 +4,19 @@
 
     
   <url>
-    <loc>https://eyea.github.io/2017/03/31/%E5%8F%91%E5%B8%83Node%E6%A8%A1%E5%9D%97%E5%88%B0NPM%E7%A4%BE%E5%8C%BA/</loc>
+    <loc>https://eyea.github.io/2017/03/30/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88%E4%BA%8C/</loc>
     <lastmod>2017-11-29T07:46:56.000Z</lastmod>
     <data>
         <display>
-        <title>发布Node模块到NPM社区(es625原始包发布案例)</title>
-        <pubTime>2017-03-31T04:09:40.000Z</pubTime>
+        <title>移动端适配方案二</title>
+        <pubTime>2017-03-30T02:02:10.000Z</pubTime>
         
-        <tag>Node</tag>
+        <tag>移动端</tag>
          
          
            
              
-              <breadCrumb title="Node" url="https://eyea.github.io/categories/Node/"/>
-          
-             
-              <breadCrumb title="npm" url="https://eyea.github.io/categories/Node/npm/"/>
+              <breadCrumb title="mobile" url="https://eyea.github.io/categories/mobile/"/>
           
         </display>
     </data>
@@ -27,19 +24,41 @@
 
     
   <url>
-    <loc>https://eyea.github.io/2017/01/14/GIT%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%E5%90%88%E9%9B%86/</loc>
+    <loc>https://eyea.github.io/2017/01/09/%E5%89%8D%E7%AB%AFajax%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%96%B9%E6%A1%88/</loc>
     <lastmod>2017-11-29T07:46:56.000Z</lastmod>
     <data>
         <display>
-        <title>GIT基本命令合集</title>
-        <pubTime>2017-01-14T03:54:49.000Z</pubTime>
+        <title>Ajax跨域请求方案</title>
+        <pubTime>2017-01-09T14:26:01.000Z</pubTime>
         
-        <tag>Git</tag>
+        <tag>Ajax</tag>
          
          
            
              
-              <breadCrumb title="Tools" url="https://eyea.github.io/categories/Tools/"/>
+              <breadCrumb title="JavaScript" url="https://eyea.github.io/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://eyea.github.io/2017/02/28/%E7%9F%A5%E8%AF%86%E4%BB%98%E8%B4%B9/</loc>
+    <lastmod>2017-11-29T07:46:56.000Z</lastmod>
+    <data>
+        <display>
+        <title>知识付费随笔（一）</title>
+        <pubTime>2017-02-28T07:20:05.000Z</pubTime>
+        
+        <tag>知识付费、变现</tag>
+         
+        <tag>知识共享</tag>
+         
+         
+           
+             
+              <breadCrumb title="热点思考" url="https://eyea.github.io/categories/%E7%83%AD%E7%82%B9%E6%80%9D%E8%80%83/"/>
           
         </display>
     </data>
@@ -82,28 +101,6 @@
            
              
               <breadCrumb title="VR" url="https://eyea.github.io/categories/VR/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://eyea.github.io/2017/02/28/%E7%9F%A5%E8%AF%86%E4%BB%98%E8%B4%B9/</loc>
-    <lastmod>2017-11-29T07:46:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>知识付费随笔（一）</title>
-        <pubTime>2017-02-28T07:20:05.000Z</pubTime>
-        
-        <tag>知识付费、变现</tag>
-         
-        <tag>知识共享</tag>
-         
-         
-           
-             
-              <breadCrumb title="热点思考" url="https://eyea.github.io/categories/%E7%83%AD%E7%82%B9%E6%80%9D%E8%80%83/"/>
           
         </display>
     </data>
@@ -188,19 +185,19 @@
 
     
   <url>
-    <loc>https://eyea.github.io/2017/01/09/%E5%89%8D%E7%AB%AFajax%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%96%B9%E6%A1%88/</loc>
+    <loc>https://eyea.github.io/2017/01/14/GIT%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%E5%90%88%E9%9B%86/</loc>
     <lastmod>2017-11-29T07:46:56.000Z</lastmod>
     <data>
         <display>
-        <title>Ajax跨域请求方案</title>
-        <pubTime>2017-01-09T14:26:01.000Z</pubTime>
+        <title>GIT基本命令合集</title>
+        <pubTime>2017-01-14T03:54:49.000Z</pubTime>
         
-        <tag>Ajax</tag>
+        <tag>Git</tag>
          
          
            
              
-              <breadCrumb title="JavaScript" url="https://eyea.github.io/categories/JavaScript/"/>
+              <breadCrumb title="Tools" url="https://eyea.github.io/categories/Tools/"/>
           
         </display>
     </data>
@@ -208,57 +205,22 @@
 
     
   <url>
-    <loc>https://eyea.github.io/2017/03/30/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88%E4%BA%8C/</loc>
+    <loc>https://eyea.github.io/2017/03/31/%E5%8F%91%E5%B8%83Node%E6%A8%A1%E5%9D%97%E5%88%B0NPM%E7%A4%BE%E5%8C%BA/</loc>
     <lastmod>2017-11-29T07:46:56.000Z</lastmod>
     <data>
         <display>
-        <title>移动端适配方案二</title>
-        <pubTime>2017-03-30T02:02:10.000Z</pubTime>
+        <title>发布Node模块到NPM社区(es625原始包发布案例)</title>
+        <pubTime>2017-03-31T04:09:40.000Z</pubTime>
         
-        <tag>移动端</tag>
+        <tag>Node</tag>
          
          
            
              
-              <breadCrumb title="mobile" url="https://eyea.github.io/categories/mobile/"/>
+              <breadCrumb title="Node" url="https://eyea.github.io/categories/Node/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://eyea.github.io/2017/01/05/night/</loc>
-    <lastmod>2017-11-29T07:46:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>开始新篇章</title>
-        <pubTime>2017-01-04T16:27:18.000Z</pubTime>
-        
-         
-           
              
-              <breadCrumb title="阅读" url="https://eyea.github.io/categories/%E9%98%85%E8%AF%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://eyea.github.io/2017/04/24/%E8%B5%84%E6%BA%90%E5%92%8C%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2017-11-29T07:46:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>资源和文章</title>
-        <pubTime>2017-04-24T02:30:40.000Z</pubTime>
-        
-        <tag>resource</tag>
-         
-         
-           
-             
-              <breadCrumb title="resources" url="https://eyea.github.io/categories/resources/"/>
+              <breadCrumb title="npm" url="https://eyea.github.io/categories/Node/npm/"/>
           
         </display>
     </data>
@@ -307,6 +269,46 @@
 
     
   <url>
+    <loc>https://eyea.github.io/2017/04/24/%E8%B5%84%E6%BA%90%E5%92%8C%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2017-11-29T07:46:56.000Z</lastmod>
+    <data>
+        <display>
+        <title>资源和文章</title>
+        <pubTime>2017-04-24T02:30:40.000Z</pubTime>
+        
+        <tag>resource</tag>
+         
+         
+           
+             
+              <breadCrumb title="resources" url="https://eyea.github.io/categories/resources/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://eyea.github.io/2017/01/05/night/</loc>
+    <lastmod>2017-11-29T07:46:56.000Z</lastmod>
+    <data>
+        <display>
+        <title>开始新篇章</title>
+        <pubTime>2017-01-04T16:27:18.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="阅读" url="https://eyea.github.io/categories/%E9%98%85%E8%AF%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
     <loc>https://eyea.github.io/about/index.html</loc>
     <lastmod>2017-11-29T07:46:56.000Z</lastmod>
     <data>
@@ -319,7 +321,5 @@
     </data>
     </url>
 
-    
-    
     
 </urlset>
