@@ -12,7 +12,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://eyea.github.io/
+url: https://eyea.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -72,3 +72,4 @@ deploy:
   type: git
   repository: https://github.com/eyeA/eyea.github.io.git
   branch: master
+  message: 网站更新于 {{ now('YYYY-MM-DD HH:mm') }}
