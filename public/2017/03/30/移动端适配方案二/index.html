@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="移动端," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="续上篇 移动端适配方案一 ，了解了关于 视口 和 像素 之后，我们继续关于适配。  适配的一切，都要忠于设计稿。">
+<meta name="keywords" content="移动端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端适配方案二">
+<meta property="og:url" content="https://eyea.github.io/2017/03/30/移动端适配方案二/index.html">
+<meta property="og:site_name" content="eyeseau">
+<meta property="og:description" content="续上篇 移动端适配方案一 ，了解了关于 视口 和 像素 之后，我们继续关于适配。  适配的一切，都要忠于设计稿。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-29T16:04:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="移动端适配方案二">
+<meta name="twitter:description" content="续上篇 移动端适配方案一 ，了解了关于 视口 和 像素 之后，我们继续关于适配。  适配的一切，都要忠于设计稿。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://eyea.github.io/2017/03/30/移动端适配方案二/"/>
+
+
+
+
+
+  <title>移动端适配方案二 | eyeseau</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">eyeseau</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Hi, Nice to see you here!</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://eyea.github.io/2017/03/30/移动端适配方案二/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="eyea">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="eyeseau">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">移动端适配方案二</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-30T10:02:10+08:00">
+                2017-03-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mobile/" itemprop="url" rel="index">
+                    <span itemprop="name">mobile</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,205
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>续上篇 <a href="http://blog.eyeseau.com/2017/03/29/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88%E4%B8%80/" target="_blank" rel="noopener">移动端适配方案一</a> ，了解了关于 视口 和 像素 之后，我们继续关于适配。</p>
+<blockquote>
+<p>适配的一切，都要忠于设计稿。</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="我只讲我用过的"><a href="#我只讲我用过的" class="headerlink" title="我只讲我用过的"></a>我只讲我用过的</h3><p><strong>rem布局方案</strong> 登场，目前我采用的方案是这样的(如无特别说明，以下的尺寸均是指宽度):</p>
+<p>1.已经和设计师沟通好设计稿的尺寸为750px；<br>2.前端这里以375px的6为依据(初始化宽度)，初始化html的fontSize为100px(方便计算)，采用理想视口：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width,initial-scale=1"</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<p>看着很暴力，嗯。。。对。。。<br>依旧举个例子，设计稿上一个元素的尺寸是16px；那么在生成过程中，我们会转化成0.08rem；<br>以上，便是适配的过程。</p>
+<h3 id="用过的要思考"><a href="#用过的要思考" class="headerlink" title="用过的要思考"></a>用过的要思考</h3><p>当我们通过一个简单的操作就可以把产品推送到百万级的用户面前的时候，应该体会到的是，科技赐予我们的力量。<br>下面分析下上述原理。<br>所有的假设都会有一个前提，这里的前提，忘记了往上看。<br>如果你跟设计师沟通好了，恰好跟我的情况一致，那恭喜，方案伸手即可用；如果是别的640，甚至是1242的，那么继续往下看。<br>针对6的，我们解决了，那么如果是6plus、4的呢 <a href="http://screensiz.es/phone" target="_blank" rel="noopener">给你瞅个眼花缭乱的</a> 。<br>这里我们加了段js，用来响应不同尺寸的屏幕对应的根元素基准值，大概意思是这样的：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> initWidth = <span class="number">375</span>,</span><br><span class="line">    initSize  = <span class="number">100</span>,</span><br><span class="line">    w         = <span class="built_in">window</span>.innerWidth,</span><br><span class="line">    fixScreen = w/initWidth*initSize;</span><br><span class="line"><span class="built_in">document</span>.documentElement.style.fontSize = fixScreen + <span class="string">"px"</span>;</span><br></pre></td></tr></table></figure>
+<p>适配？交给js去吧，静态部分只需计算好设计稿的尺寸跟对应的css像素，别的dpr，ppi，lpi，视觉视口，理想视口，布局视口…bye</p>
+<h3 id="说我想说的"><a href="#说我想说的" class="headerlink" title="说我想说的"></a>说我想说的</h3><p>理论部分，目前确实不擅长，各种名词和之间的逻辑关系。理解之后，我只用自己熟悉的语言来描述出来，加深记忆的同时，或许会帮助一些人。<br>强烈建议看上一篇 <a href="http://blog.eyeseau.com/2017/03/29/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88%E4%B8%80/" target="_blank" rel="noopener">移动端适配方案一</a> ，我开始继续逼逼。</p>
+<p>这里我们可以假设dpr铺满“布局视口”的每一个像素点，那么也就是说此时的“布局视口”就是理想视口，就是视觉视口，简单理解就是1px=1dpr。</p>
+<p>但是移动设备(这里主要是手机，pad等)，往往不能给我们展示出真正的布局视口，所以需要适配。也就类似在清明上河图上显示出北宋汴京社会全貌。<br>同样是表示卖菜的商贩，图纸上可能就是一个点，而社会上可能就是一大片区域，区别就在于资源的限制。如果想要在视觉视口上表示出布局视口的所有内容，那么肯定的一点就是单位面积上可用来表示元素的资源密集了，轮廓我们就可以按照比例放小点了，因为他也可以表示的很清楚，丝毫不逊于布局视口的展现。</p>
+<p>所给图纸的大小不一样，我们就需要不同的适配，用来表现同样的东西。</p>
+<p>清明上河图只有一份，在故宫放着。一个团队开发的标准也只有一个，上面方案就是一个标准，然后不同画布我们根据标准来等比缩放，那么同样的数字和单位的结合，在不同的图纸上，表示的大小就可能会不一样，在A4上可能是16px，那么在A2图纸上可能就是32px，因为可用资源增多了嘛。</p>
+<p>回过神来，设计稿是按照750px来设计的，元素是16px，那么设计师想要表达的是在750px的设备上展现的尺寸就是16个物理像素，在PC端，因为布局视口和视觉视口是一致的，我们不用适配，在移动端，不要高兴太早。<br>同样表示的16个像素点，在6的375px下，表示设计稿元素同样的尺寸，因为其dpr为2，也就是说每个css像素，可以表示尺寸2个物理像素，所有自然而然的css像素就是8px了，没毛病。</p>
+<p>这就是跟设计师沟通达成一致后的方案，皆大欢喜。</p>
+<p>总结一下，我们确定基准6，然后结合 <strong>meta</strong> 和 <strong>javascript</strong> ，前者锁定理想视口，后者响应设备，重置根元素基准值。相关代码在来一遍：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">'viewport'</span> content=<span class="string">'width=device-width,initial-scale=1,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no'</span>&gt;</span><br><span class="line"><span class="keyword">var</span> initWidth = <span class="number">375</span>,</span><br><span class="line">    initSize  = <span class="number">100</span>,</span><br><span class="line">    w         = <span class="built_in">window</span>.innerWidth,</span><br><span class="line">    fixScreen = w/initWidth*initSize;</span><br><span class="line"><span class="built_in">document</span>.documentElement.style.fontSize = fixScreen + <span class="string">"px"</span>;</span><br></pre></td></tr></table></figure></p>
+<p>（本文完）</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/移动端/" rel="tag"># 移动端</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/29/移动端适配方案一/" rel="next" title="移动端适配方案一">
+                <i class="fa fa-chevron-left"></i> 移动端适配方案一
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/31/发布Node模块到NPM社区/" rel="prev" title="发布Node模块到NPM社区(es625原始包发布案例)">
+                发布Node模块到NPM社区(es625原始包发布案例) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">eyea</p>
+              <p class="site-description motion-element" itemprop="description">为了更优雅的生活</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#我只讲我用过的"><span class="nav-number">1.</span> <span class="nav-text">我只讲我用过的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用过的要思考"><span class="nav-number">2.</span> <span class="nav-text">用过的要思考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说我想说的"><span class="nav-number">3.</span> <span class="nav-text">说我想说的</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">eyeseau</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
