@@ -744,6 +744,11 @@
 <!-- END LOCAL -->
 
     
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
 
     
       <script type="text/javascript">
@@ -751,9 +756,9 @@
         var gitment = new Gitmint({
             id: window.location.pathname, 
             owner: 'eyeA',
-            repo: 'https://github.com/eyeA/blog-eyeseau-comment.git',
+            repo: 'blog-eyeseau-comment',
             
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            lang: "en" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
             oauth: {
             
