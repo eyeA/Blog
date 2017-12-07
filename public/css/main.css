@@ -747,7 +747,7 @@ pre .javascript .function {
   margin-bottom: 20px;
   border: 1px solid #eee;
   border-left-width: 5px;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 .post-body .note h2,
 .post-body .note h3,
@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffcdf9;
+  background: #ff8c40;
 }
 .links-of-blogroll {
   font-size: 13px;
