@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: eyeseau
-subtitle: Hi, Nice to see you here!
+title: eyea
+subtitle: Nice to see you here!
 description: "为了更优雅的生活"
 author: eyea
 language: zh-Hans
@@ -12,7 +12,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://eyea.github.io/
+url: https://eyea.github.io/blog
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -70,6 +70,6 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/eyeA/eyea.github.io.git
+  repository: https://github.com/eyeA/blog.git
   branch: master
-  message: 网站更新于 {{ now('YYYY-MM-DD HH:mm') }}
+  message: website has updated at {{ now('YYYY-MM-DD HH:mm') }}
