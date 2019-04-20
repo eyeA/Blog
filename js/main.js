@@ -245,9 +245,11 @@
 
             var $rewardToggle = $('#rewardToggle');
             var $rewardCode = $('#rewardCode');
+            var $rewardTogglLabel = $('.reward-toggle-label')
             if ($rewardToggle) {
                 $rewardToggle.addEventListener('change', function () {
                     $rewardCode.src = this.checked ? this.dataset.alipay : this.dataset.wechat
+                    $rewardTogglLabel.innerHTML = !this.checked ? '支付宝' : '微信'
                 })
             }
         },
