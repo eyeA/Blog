@@ -7,13 +7,14 @@ title: eyea
 subtitle: Nice to see you here!
 description: "为了更优雅的生活"
 author: eyea
-language: zh-Hans
+# language: zh-Hans
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://eyea.github.io/blog
-root: /blog/
+root: /blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
