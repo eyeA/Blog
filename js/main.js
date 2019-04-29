@@ -11,6 +11,7 @@
         menuToggle = $('#menu-toggle'),
         menuOff = $('#menu-off'),
         loading = $('#loading'),
+        canvas_bg = $('#canvas_bg')
         animate = w.requestAnimationFrame,
         scrollSpeed = 200 / (1000 / 60),
         forEach = Array.prototype.forEach,
@@ -446,6 +447,32 @@
             })
         }
     };
+
+    // canvas click event start
+    var ctx = canvas_bg.getContext("2d");
+    console.log('ctx', ctx, canvas_bg)
+    var WIDTH = d.documentElement.clientWidth;
+    var HEIGHT = d.documentElement.clientHeight;
+    canvas_bg.width = WIDTH;
+    canvas_bg.height = HEIGHT;
+    function random(number) {
+        return Math.floor(Math.random()*number);
+    }
+
+    function draw() {
+        console.warn('dd', ctx)
+        ctx.clearRect(0,0,WIDTH,HEIGHT);
+        for(let i = 0; i < 100; i++) {
+          ctx.beginPath();
+          ctx.fillStyle = 'rgba(255,0,0,0.2)';
+          ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
+          ctx.fill();
+        }
+      }
+
+    // d.addEventListener('click', draw);
+
+    // canvas click event end
 
     w.addEventListener('load', function () {
         loading.classList.remove('active');
